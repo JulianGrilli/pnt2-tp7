@@ -59,12 +59,12 @@
   export default  {
     name: 'src-components-login-component',
     props: [],
-  data () {
-    return {
-      f: this.resetForm(),
-      usuarioValido: false,
-      isFormClicked: false
-    }
+    data () {
+      return {
+        f: this.resetForm(),
+        usuarioValido: false,
+        isFormClicked: false
+      }
   },
   computed: {
     hasFormAnyEmptyField(){

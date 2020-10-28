@@ -80,4 +80,15 @@ export default  {
   .src-components-get-tareas {
 
   }
+
+  .label-form {
+    float: left;
+    margin-left: 3px;
+    margin-top: 35px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
 </style>

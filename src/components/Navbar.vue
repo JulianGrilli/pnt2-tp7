@@ -23,6 +23,13 @@
         </li>
       </ul>
     </div>
+    <div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-danger my-2 my-sm-0" @click="logout()">Logout</button>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   </section>
@@ -35,15 +42,19 @@
     name: 'src-components-navbar',
     props: [],
     mounted () {
-
     },
     data () {
       return {
-
+        access: sessionStorage.getItem('loginValid'),
+        accessFromChild: false
       }
     },
     methods: {
-
+      logout(){
+        sessionStorage.removeItem('loginValid');
+        this.access = false;
+        this.$router.push('/')
+      }
     },
     computed: {
 
@@ -57,6 +68,8 @@
   .src-components-navbar {
 
   }
+  button{
+    float: right;}
   nav {
     box-shadow: 1px 2px #c0c0c17d;
   }

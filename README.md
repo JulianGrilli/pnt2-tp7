@@ -33,3 +33,5 @@ De lo contrario aparecerá un mensaje de error.
 Mientras no se haya registrado, si intenta ver los recursos de crear tarea, y/o obtener tareas, le aparecerá un warning diciendo
 que no tiene acceso al recurso.
 
+El login esta manejado con sessionStorage y el formateo de la fecha con moment
+
